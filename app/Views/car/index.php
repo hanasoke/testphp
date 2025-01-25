@@ -6,17 +6,12 @@
     <div class="col">
       <!-- Notifikasi -->
       <?php if (session()->getFlashdata('message')) : ?>
-          <div class="alert alert-success">
-              <?= session()->getFlashdata('message'); ?>
-          </div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= session()->getFlashdata('message'); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
       <?php endif; ?>
 
-      <!-- Validasi Error -->
-      <?php if (isset($validation)) : ?>
-          <div class="alert alert-danger">
-              <?= $validation->listErrors(); ?>
-          </div>
-      <?php endif; ?>
     </div>
   </div>
   <div class="row">
