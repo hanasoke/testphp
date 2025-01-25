@@ -10,31 +10,38 @@
                 <input type="hidden" name="_method" value="put">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control <?= (isset($validation) && $validation->hasError('name')) ? 'is-invalid' : ''; ?>" id="name" name="name" value="<?= old('name') ?? $car['name']; ?>">
+                    <input type="text" class="form-control" id="name" name="name" value="<?= $car['name']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="brand" class="form-label">Brand</label>
-                    <input type="text" class="form-control <?= (isset($validation) && $validation->hasError('brand')) ? 'is-invalid' : ''; ?>" id="brand" name="brand" value="<?= old('brand') ?? $car['brand']; ?>">
+                    <select class="form-select" id="brand" name="brand" value="<?= $car['brand']; ?>">
+                        <option selected><?= $car['brand']; ?></option>
+                        <option value="Honda">Honda</option>
+                        <option value="Daihatsu">Daihatsu</option>
+                        <option value="Mitsubishi">Mitsubishi</option>
+                        <option value="BWD">BWD</option>
+                        <option value="BMW">Mitsubishi</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="type" class="form-label">Type</label>
-                    <select class="form-select" id="type" name="type">
-                        <option selected value="<?= old('type') ?? $car['type']; ?>" required><?= old('type') ?? $car['type']; ?></option>
+                    <select class="form-select" id="type" name="type" value="<?= $car['type']; ?>">
+                        <option selected><?= $car['type']; ?></option>
                         <option value="Manual">Manual</option>
                         <option value="Matic">Matic</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">Price</label>
-                    <input type="number" class="form-control <?= (isset($validation) && $validation->hasError('price')) ? 'is-invalid' : ''; ?>" id="price" name="price" value="<?= old('price') ?? $car['price']; ?>">
+                    <input type="number" class="form-control" id="price" name="price" value="<?= $car['price']; ?>" required>
                 </div>
                 <div class="mb-3">
                     <label for="manufacture" class="form-label">Manufacture</label>
-                    <input type="date" class="form-control" id="manufacture" name="manufacture" value="<?= old('manufacture') ?? $car['manufacture']; ?>">
+                    <input type="text" class="form-control" id="manufacture" name="manufacture" value="<?= $car['manufacture']; ?>" required>
                 </div>
-                <button type="submit" class="btn btn-primary float-end">Update</button>
+                <button type="submit" class="btn btn-success float-end">Save</button>
             </form>
-            <a href="/" class="btn btn-secondary float-start">Back</a>
+            <a href="/" class="btn btn-secondary float-start mb-3">Back</a>
         </div>
     </div>
 </div>

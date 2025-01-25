@@ -17,4 +17,6 @@ database.default.DBDriver = MySQLi
 
 sekedar menginformasikan.
 saya menggunakan Xampp native sehingga saya menggunakan username dan password lokal saya.
-silahkan konfigutasi untuk username, password, dan hostnamenya sesuai lokal
+silahkan konfigurasi untuk username, password, dan hostnamenya sesuai server yang dipakai anda.
+
+untuk mengakses database nya gunakan Xampp atau apache server yang sesuai dengan anda.

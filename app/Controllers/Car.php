@@ -30,7 +30,6 @@ class Car extends BaseController
         // menampung judul halaman
         $data = [
             'title' => 'Add New Car',       
-            'validation' => \Config\Services::validation() // kirim validasi ke view
         ];
 
         // mengarahkan untuk ke halaman pengguna
@@ -40,19 +39,7 @@ class Car extends BaseController
     // menjalankan function untuk menambahkan data
     public function save()
     {
-        // Validasi input 
-        if(!$this->validate([
-            'name' => 'required|min_length[3]',
-            'brand' => 'required',
-            'type' => 'required',
-            'price' => 'required|numeric',
-            'brand' => 'required',  
-        ])) {
-            // dd($this->validator->getErrors());
-            return redirect()->back()->withInput()->with('validation', $this->validator);
-        }
-
-        // list data yang ditambahkan & data berhasil divalidasi
+        // list data yang ditambahkan
         $this->carModel->save([
             'name' => $this->request->getPost('name'),
             'brand' => $this->request->getPost('brand'),
@@ -61,10 +48,8 @@ class Car extends BaseController
             'manufacture' => $this->request->getPost('manufacture'),
         ]);
 
-        // kembali ke halaman utama & notifikasi sukses
-        return redirect()->to('/')->with('message', 'Data Berhasil ditambahkan!');
-
-        
+        // kembali ke halaman utama
+        return redirect()->to('/');
     }
 
     // menuju halaman edit car & mengirimkan data mobil sebelumnya
@@ -75,12 +60,8 @@ class Car extends BaseController
 
         // menampung data car & judul halaman
         $data = [
-            // menampung judul halaman
             'title' => 'Edit Car',
-            // menampung data car
             'car' => $car,
-            // validasi car
-            'validation' => \Config\Services::validation() // kirim validasi ke view
         ];
         
         // menuju halaman edit car
@@ -90,18 +71,7 @@ class Car extends BaseController
     // menjalankan fungsi update car
     public function update($id)
     {
-        // Validasi input 
-        if(!$this->validate([
-            'name' => 'required|min_length[3]',
-            'brand' => 'required',
-            'type' => 'required',
-            'price' => 'required|numeric',
-            'brand' => 'required',  
-        ])) {
-            return redirect()->back()->withInput()->with('validation', $this->validator);
-        }
-        
-        // menampung data yang diubah & validasi berhasil
+        // menampung data yang diubah
         $data = [
             'name' => $this->request->getPost('name'),
             'brand' => $this->request->getPost('brand'),
@@ -112,19 +82,17 @@ class Car extends BaseController
 
         // melakukan updated data 
         $this->carModel->update($id, $data);
-        // mengarahkan ke halaman utama & notifikasi sukses
-        return redirect()->to('/')->with('message', 'Data berhasil diperbarui!');
-        
+        // mengarahkan ke halaman utama
+        return redirect()->to('/');
     }
 
     public function delete($id)
     {
-        // Hapus data berdasarkan ID
         $this->carModel->delete($id);
-
-        // Notifikasi sukses
-        return redirect()->to('/')->with('message', 'Data berhasil dihapus!');
+        return redirect()->to('/');
     }
+
+
 }
 
 

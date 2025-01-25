@@ -2,18 +2,6 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-  <div class="row ">
-    <div class="col">
-      <!-- Notifikasi -->
-      <?php if (session()->getFlashdata('message')) : ?>
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <?= session()->getFlashdata('message'); ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      <?php endif; ?>
-
-    </div>
-  </div>
   <div class="row">
     <div class="col">
       <h1 class="my-3 float-start">Daftar Mobil</h1>
