@@ -20,3 +20,5 @@ saya menggunakan Xampp native sehingga saya menggunakan username dan password lo
 silahkan konfigurasi untuk username, password, dan hostnamenya sesuai server yang dipakai anda.
 
 untuk mengakses database nya gunakan Xampp atau apache server yang sesuai dengan anda.
+
+3. untuk menjalankan website nya gunakan 'php spark serve pada terminal'
