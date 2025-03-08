@@ -1,0 +1,192 @@
+ERROR - 2025-03-08 06:35:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'testphp', 3306, '', 0)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#9 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-08 06:35:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'testphp', 3306, '', 0)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#9 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-08 06:35:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'testphp', 3306, '', 0)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#9 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-03-08 06:35:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'root', '', 'testphp', 3306, '', 0)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#9 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\laragon-6\www\testphp\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\laragon-6\www\testphp\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\laragon-6\www\testphp\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\laragon-6\www\testphp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\laragon-6\www\testphp\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\laragon-6\www\testphp\app\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+#6 D:\laragon-6\www\testphp\system\CodeIgniter.php(933): App\Controllers\Car->index()
+#7 D:\laragon-6\www\testphp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+#8 D:\laragon-6\www\testphp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\laragon-6\www\testphp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\laragon-6\www\testphp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\laragon-6\www\testphp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-08 06:35:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cars`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Car->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 06:35:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cars`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Car->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 06:35:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cars`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Car->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-08 06:35:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `cars`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Car.php(17): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Car->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Car))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
